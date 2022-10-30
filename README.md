@@ -17,11 +17,19 @@ In the prior code, we were operating under one array, that of "tickers()". This 
 
 To catch all the data in one pass, we needed to create three additional arrays: tickerVolumes, tickerStartingPrices and tickerEndingPrices. These arrays will be numerical in value.
 
+![arrays](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/1b.png)
+
 To coordinate the data between these arrays, we'll need to create an Integer variable reflective of the ticker() array's String data. We've called this tickerIndex. 
+
+![tickerIndex](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/1a.png)
 
 Next, we'll use our single loop. First, we'll have the totalVolumes variable established so our loop picks up the cumulative volumes of all the stocks by name. Second, we'll utilitize If Then statements to allow our loop to determine the tickerStartingPrices and tickerEndingPrices. Notice the usage of the tickerIndex variable to determine the array's numeric variable.
 
+![code](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2a.png)
+
 Finally, we're going to loop through our analysis worksheet to deliver our ticker names, cumulative stock volumes and the calculation of return values (tickerEndingPrice / tickerStartingPrices -1).
+
+![4](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/refractored-4.png)
 
 ## Results
 
@@ -29,14 +37,15 @@ Finally, we're going to loop through our analysis worksheet to deliver our ticke
 
 
 #### - Refactored Results
-
+![2017 Results](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2017refractoredcells.png) ![2018 Results](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2018refractoredcells.png)
 
 #### - Previous Elapsed Run Time for the Scripts
 
-
+![2018 RTS](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2018originalcodetimer.png)
 
 #### -  Refactored Elapsed Run Time For the Scripts
 
+![2017 RRTS](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png.png) ![2018 RRTS](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png.png)
 
 ### Summary
 
