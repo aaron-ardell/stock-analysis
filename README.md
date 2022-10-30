@@ -34,54 +34,21 @@ Finally, we're going to loop through our analysis worksheet to deliver our ticke
 ## Results
 
 #### - Previous Results
-
+![2017 Results](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2017AllStockscells.png) ![2018 Results](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2018allstockscells.png)
 
 #### - Refactored Results
 ![2017 Results](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2017refractoredcells.png) ![2018 Results](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2018refractoredcells.png)
 
 #### - Previous Elapsed Run Time for the Scripts
 
-![2018 RTS](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2018originalcodetimer.png)
+![2017 RTS](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2017originalcodetimer.png) ![2018 RTS](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/Resources/2018originalcodetimer.png)
 
 #### -  Refactored Elapsed Run Time For the Scripts
 
 ![2017 RRTS](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png.png) ![2018 RRTS](https://github.com/aaron-ardell/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png.png)
 
-### Summary
+## Summary
 
-The advantages of refactoring the code in this instance improved the speed in which the code could calculate and sort data for the client by limiting the number of times the code looped through every cell of data. Refactoring code can make it simpler to understand, more efficient in size and speed, more adaptive to the data set its applied to and simpler to understand. Writing the code from scratch would have added timely redundancy to the task and risked creating new errors to debug. 
+The advantages of refactoring the code in this instance improved the speed in which the code could calculate and sort data for the client by limiting the number of times the code looped through every cell of data. Refactoring code can make it simpler to understand, more efficient in size and speed, more adaptive to the data set its applied to and simpler to understand. Writing the code from scratch would have added timely redundancy to the task and risked creating new errors to debug. The disadvantages of refactoring code would be the potential to introduce new error or bugs into existing code and the potentially time-consuming nature of the process. A risk vs. reward consideration should be carefully considered to deetermine if the potential outcome is worth the cost of resources. 
 
-
-What are the advantages or disadvantages of refactoring code?
-
-How do these pros and cons apply to refactoring the original VBA script?
-
-What are the advantages or disadvantages of refactoring code?
-
-
-
-
-For your written analysis, be sure to use complete and coherent sentences. Your written analysis should contain three sections, which cover the following:
-
-Overview of Project: Explain the purpose of this analysis.
-Results: Using images and examples of your code, compare the stock performance between 2018 and 2018, as well as the execution times of the original script and the refactored script.
-Summary: In a summary statement, address the following questions.
-What are the advantages or disadvantages of refactoring code?
-Deliverable 2 Requirements
-Structure, Organization, and Formatting Requirements (8 points)
-The written analysis contains the following structure, organization, and formatting:
-
-There is a title, and there are multiple paragraphs (2 pt).
-Each paragraph has a heading (2 pt).
-There are subheadings to break up text (2 pt).
-Links are working, and images are formatted and displayed where appropriate (2 pt).
-Analysis Requirements (12 points)
-The written analysis has the following:
-
-Overview of Project
-The purpose and background are well defined (2 pt).
-Results
-The analysis is well described with screenshots and code (4 pt).
-Summary
-There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
-There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
+For this code there was a simple goal proposed by our client: streamline the code so it can be applied to the entire market worth of data. The original code was simple and effective at producing accurate results for the limited data set, but if the data set were increased the runtime created by the multiple loops through the cells would've hindered performance of the code. On the positive side, this meant that half the original code(timer, ticker array and cell formatting) were retained and only the central loop script would need to be refactored(variables, loops and If Then statements).   
